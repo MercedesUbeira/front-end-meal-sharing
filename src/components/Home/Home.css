@@ -1,0 +1,57 @@
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home-logo {
+  width: 550px;
+  height: auto;
+  margin-bottom: 20px; 
+  margin-top: 150px;
+  animation: fadeInAnimation 2s ease-in-out;
+}
+
+.center-wrapper {
+  text-align: center;
+}
+
+.start-btn {
+  animation: fadeInAnimation 2s ease-in-out;
+  background-color: #BD5828;
+  color: white;
+  font-size: 18px;
+  padding: 10px 200px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: step-start;
+  align-items: center;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.start-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*Responsive style for phone */
+@media (max-width: 360px) {
+  .home-logo {
+    width: 380px;
+  }
+  
+  .start-btn {
+    padding: 10px 50px;
+  }
+}
